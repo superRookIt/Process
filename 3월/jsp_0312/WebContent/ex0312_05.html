@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- html5 형식  -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>AKBeauty</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:900&display=swap"
+	rel="stylesheet">
+
+<style type="text/css">
+
+* {
+	margin: 0px;
+	padding: 0;
+}
+
+#top {
+	width: 100%;
+	height: 80px;
+	background-image: url('image/top.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+div {
+	width: 100%;
+	height: 58x;
+	border-top: 1px solid #252525;
+	border-bottom: 1px solid #252525;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin-bottom: 50px;
+
+	/* display: inline; inline방식은 width, height 적용 안됨 */
+	/* display: inline-block; inline-block으로 하면 width가 적용 */
+}
+
+ul {
+	list-style-type: none;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+li {
+	box-sizing: border-box; /* !! */
+	float: left;
+	width: 166px;
+	height: 58px;
+	padding-top: 13px;
+	font-size: 18px;
+	text-align: center;
+}
+
+li:hover {
+	border-bottom: 2px solid black;
+}
+
+a {
+	color: black;
+}
+
+/* 
+#d01 {
+	background: red;
+}
+
+#s02 {
+	background: yellow;
+}
+
+#s02:hover {
+	display: none;
+}
+ */
+</style>
+</head>
+<body>
+
+	<!-- div 블록(block)방식이라서 위아래로 떨어짐 -->
+	<!-- <div id="d01">div1</div>
+	
+	<!-- span 인라인(inline)방식이라서 옆으로 -->
+	<!-- <span id="s02">span2</span> -->
+
+	<header>
+		<div id="top"></div>
+	</header>
+	<nav>
+		<div>
+
+			<ul>
+				<a href="https://www.akbeauty.co.kr/brand/2"><li>브랜드</li></a>
+				<a href="https://www.akbeauty.co.kr/display/category/1"><li>카테고리</li></a>
+				<a href="https://www.akbeauty.co.kr/display/category/best"><li>BEST</li></a>
+				<a href="https://www.akbeauty.co.kr/channel"><li>Channel AK</li></a>
+				<a href="https://www.akbeauty.co.kr/event"><li>EVENT</li></a>
+				<a href="https://www.akbeauty.co.kr/review"><li>REVIEW</li></a>
+			</ul>
+
+		</div>
+	</nav>
+
+</body>
+</html>
