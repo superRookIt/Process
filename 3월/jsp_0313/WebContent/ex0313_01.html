@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex0313_01</title>
+<style type="text/css">
+div {
+	width: 1000px;
+	height: 500px;
+	border: 5px solid pink;
+	background-image: url("image/back01.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 30px;
+}
+
+/* div p {  div안에 있는 p만 적용 
+	color: red;
+	font-weight: bold
+} */
+ul>li:nth-child(3) { /* li의 3번째 - 네이버만 적용 */
+	color: green;
+	font-weight: bold;
+}
+
+/* div>p : div내에 있는 자식의 p만  */
+</style>
+</head>
+
+<body>
+	<p>div바깥에 있는 p</p>
+	<div>
+		<h4>타이틀</h4>
+		<p>타이틀에 대한 설명</p>
+		<ul>
+			<li>구글</li>
+			<li>다음</li>
+			<li>네이버</li>
+			<li>네이트</li>
+			<li>야후</li>
+			<p>
+				yahoo is in japan
+				<!-- 자손  -->
+			</p>
+		</ul>
+		<p>타이틀 이해</p>
+	</div>
+
+</body>
+</html>

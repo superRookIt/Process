@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link
+	href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:900&display=swap"
+	rel="stylesheet">
+<title>AKBeauty</title>
+<style>
+div {
+	width: 300px;
+	height: 300px;
+}
+
+#d01 {
+	z-index: 3;
+	background-color: yellow;
+	position: relative;
+}
+
+#d02 {
+	z-index: 2;
+	background-color: green;
+	position: absolute;
+	left: 50px;
+	/* visibility: hidden; /* 공간은 남음 */
+	/* display:none; /* 아예 사라짐 */
+	/* position: absolute; /* 부모의 기준점에서 움직임 */
+}
+
+#d03 {
+	z-index: 1;
+	background: Red;
+	position: relative;
+	top: -100px;
+}
+</style>
+</head>
+
+<body>
+
+	<div id="d01">div01</div>
+	<div id="d02">div02</div>
+	<div id="d03">div03</div>
+
+</body>
+</html>
