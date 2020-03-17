@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/prefixfree.dynamic-dom.min.js"></script>
+<!-- webkit 이런거 안 붙여도 되는 스크립트 ^^ -->
+<style>
+div {
+	width: 300px;
+	height: 300px;
+	/* 	background: blue;
+	transition-property: all;
+	transition-duration: 2s; */
+}
+
+#d01 {
+	width: 300px;
+	height: 300px;
+	background: yellow;
+	/* animation-name: ch_back;
+	animation-duration: 3s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite; 
+	↓이렇게 한번에 입력할 수 있음                  */
+	animation:ch_back 3s alternate infinite, /* , */
+	ch_back2 3s alternate infinite;
+}
+
+@keyframes ch_back {
+
+from { 
+background:yellow;
+
+}
+50%{
+background-color:red;
+}
+to {
+	background: blue;
+	transform:scale(5);
+}
+
+}
+/* 
+@keyframes ch_back2 {
+
+from { 
+
+
+}
+
+to {
+	
+	transform:rotate(45deg);
+}
+
+} */
+
+
+/* #d02 {
+	background: green;
+	transition-property: all;
+	transition-duration: 3s;
+	transition-timimg-funtion: ease-in-out;
+}
+
+#d02:hover {
+	width: 300px;
+}
+
+#d03 {
+	background: blue;
+	transition-property: all;
+	transition-duration: 3s;
+	transition-timimg-funtion: ease-in;
+}
+
+#d03:hover {
+	width: 300px;
+}
+
+#d04 {
+	background: red;
+	transition-property: all;
+	transition-duration: 3s;
+	transition-timimg-funtion: ease-out;
+}
+
+#d04:hover {
+	width: 300px;
+}
+
+#d05 {
+	background: gray;
+	transition-property: all;
+	transition-duration: 3s;
+	transition-delay:0.5s;
+	transition-timimg-funtion: ease;
+}
+
+#d05:hover {
+	width: 300px;
+} */
+div:hover {
+	/* transform: translate(50px, 30px); */
+	/* transform: scale(1.2); */
+	/* transform:rotate3d(0,300,0,45deg); */
+	/* transform: skewX(-45deg);
+	transform-origin: right top; */
+	
+}
+</style>
+<title>transform</title>
+</head>
+<body>
+	<div id="d01"></div>
+
+</body>
+</html>

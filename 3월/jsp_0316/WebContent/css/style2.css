@@ -1,0 +1,277 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul { /* new */
+	list-style-type: none;
+}
+
+nav {
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid #ddd;
+}
+
+nav div {
+	/* width: 300px; */
+	height: 90px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* 로고부분 */
+nav div:nth-child(1) {
+	width: 150px;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+
+/* 메뉴부분 */
+
+/* #menu {
+	width: 1500px;
+} */
+#menu ul {
+	/* list-style-type: none; */
+	padding-top: 30px;
+	padding-left: 30px;
+	width: 1380px; /* new  */
+}
+
+#menu>ul>li {
+	float: left;
+	width: 150px; /* 180 */
+	color: #333;
+	text-align: center;
+	font-size: 17px;
+	margin-right: 20px; /* new  */
+}
+
+/* 로그인 기능  */
+#t_icon {
+	/* width: 450px; */
+	/* margin-left: 30px; */
+	width: 300px;
+	margin-left: 10px;
+}
+
+#t_icon div {
+	/* width: 130px;
+	height: 52px; */
+	/* margin-right: 10px; */
+	float: left;
+	margin-right: 20px;
+}
+
+#t_icon>div:nth-child(1) {
+	font-size: 16px;
+	color: white;
+	background: black;
+	margin-top: 15px;
+	text-align: center;
+	padding-left: 0px;
+	padding-top: 13px;
+	/* new  */
+	width: 98px;
+	height: 53px;
+}
+
+#t_icon>div:nth-child(2) {
+	color: black;
+	/* 	color: white; */
+	margin-top: 15px;
+	padding-left: 0px;
+	padding-top: 13px;
+	/* border: 1px solid black; */
+	background: url("../image/mypage.png") no-repeat scroll center center;
+	/* new */
+	width: 60px;
+	height: 53px;
+	font-size: 16px;
+	text-align: center;
+	border:1px solid black;
+}
+
+#t_icon>div:nth-child(3) {
+	font-size: 16px;
+	/* background: black; */
+	/* color: white; */
+	color: black;
+	margin-top: 14px;
+	text-align: center;
+	padding-left: 0px;
+	padding-top: 13px;
+	/* new */
+	width: 80px;
+	height: 53px;
+	border:1px solid black;
+}
+
+article>div {
+	width: 100%;
+	height: 150px;
+}
+
+article>div>p {
+	width: 1000px;
+	height: 56px;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	margin: 0 auto;
+	/* 	margin-top: 30px; */
+	font-size: 38px;
+	color: #333;
+}
+
+#art_form>div {
+	width: 480px; /* 550 */
+	height: 80px;
+	margin: 0 auto;
+}
+
+#art_form>div>form>select {
+	width: 123px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 15px;
+	color: #666;
+	/* new */
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+#art_form>div>form>input {
+	width: 273px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 15px;
+	color: #666;
+	/* new */
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+/* new */
+#art_form>div>form>button {
+	width: 50px;
+	height: 42px;
+	background: url('../image/search.png') center center no-repeat;
+	background-color: black;
+	/* ★ url을 먼저 하고 그 다음에 color를 해야 나옴
+	개같네 ㅡㅡ......... */
+	/* new */
+	line-height: 42px;
+	font-size: 15px;
+	padding: 13px;
+}
+
+#table>div {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+#table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#table table thead {
+	border-top: 3px solid #26252b;
+	border-bottom: 1px solid #bdbdbf;
+	height: 70px;
+}
+
+#table table tr {
+	height: 70px;
+	border-bottom: 1px solid #bdbdbf;
+	text-align: center;
+}
+
+#art_num {
+	width: 300px;
+	height: 24px;
+	margin: 0 auto;
+	position: relative;
+	top: 700px;
+}
+
+#art_num strong {
+	display: inline-block;
+	width: 36px;
+	height: 35px;
+	margin-right: 5px;
+}
+
+#art_num strong:nth-child(1) {
+	background: url("../image/paging_first.png") no-repeat;
+}
+
+#art_num strong:nth-child(2) {
+	background: url("../image/paging_prev.png") no-repeat;
+}
+
+#art_num strong:nth-child(4) {
+	background: url("../image/paging_last.png") no-repeat;
+}
+
+#art_num strong:nth-child(5) {
+	background: url("../image/paging_last.png") no-repeat;
+}
+
+#art_num a {
+	width: 36px;
+	height: 35px;
+	margin-right: 5px;
+	border: 1px solid #989898;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 32px;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	top: -12px;
+	line-height: 32px;
+}
+
+#list {
+	margin: 0 auto;
+}
+
+#list tr:nth-child(1) td {
+	border-top: 1px solid #26252b;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 26px 30px;
+	font-size: 22px;
+	color: #000;
+}
+
+#list tr:nth-child(2) td {
+	font-size: 18px;
+	font-weight: lighter;
+	display: table-cell;
+	width: inherit;
+	min-width: 118px;
+	padding-right: 28px;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 20px 30px;
+	color: #525252;
+}
+
+#list tr:nth-child(3) td {
+	
+}
+
+#list tr:nth-child(4) td {
+	padding: 20px 30px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+#list tr:nth-child(5) td {
+	padding: 20px 30px;
+	border-bottom: 1px solid #e0e0e0;
+}

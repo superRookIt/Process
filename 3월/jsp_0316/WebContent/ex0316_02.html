@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.box1 {
+	float: left;
+	width: 100px;
+	height: 40px;
+	background: yellow;
+	margin-right: 20px;
+	position: relative; /* ★ */
+	left: 50px;
+	top: 20px;
+}
+
+.box2 {
+	width: 300px;
+	height: 40px;
+	background: blue;
+	float: left;
+}
+
+div {
+	width: 300px;
+	height: 50px;
+	border: 1px solid black;
+}
+
+#d2_1 {
+	position: absolute;
+	background: green;
+	left: 30px;
+	top: 30px;
+}
+
+#d4_1 {
+	position: absolute;
+	left: 50px;
+}
+
+/* div {
+	width: 170px;
+	height: 160px;
+	border: 1px solid black;
+	border-radius: 0px;
+	background: url("image/mini.png") no-repeat;
+	box-shadow: 0 6px 20px #666;
+}
+
+div:hover {
+	border-radius: 80px;
+} */
+</style>
+</head>
+
+<body>
+	<div class="box1"></div>
+	<div class="box2"></div>
+	<div>1</div>
+	<div id="d2_1">2</div>
+	<div>3</div>
+	<div>
+		4
+		<div id="d4_1">4_1</div>
+	</div>
+	<div>5</div>
+</body>
+
+</html>
