@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="js/prefixfree.dynamic-dom.min.js"></script>
+<title>translate</title>
+<style>
+
+/* @import url(https://weloveiconfonts.com/api/?family=entypo);
+
+	[class*="entypo-"]:before {
+	  font-family: 'entypo', sans-serif;
+	} */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	width: 300px;
+	height: 300px;
+	margin: 300px auto;
+	border: 1px solid black;
+	/* perspective: 700px; /* p의 부모요소 */ */
+}
+
+p {
+	width: 300px;
+	height: 300px;
+	background:red;
+	/* font-size:300px;
+	text-align:center;
+	color:blue;
+	transform-origin:left top; */
+	/* transition: all 2s /* ease 0s :default */
+	/* ; 하나 잘못쳐도 실행이 안되네 html 진짜 별로다 최악 
+	어디가 잘못되었는지도 안알려주고 */
+    animation:aaa 1s alternate infinite ease;
+}
+
+@keyframes aaa {
+
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}
+
+}
+ 
+	/*  transform: translateX(50px); 
+	transform-origin:left top; /* 기준점 
+	transform: scale(1.5) skew(30deg);
+	opacity: 50%; /* 불투명함  */
+
+</style>
+</head>
+<body>
+<div>
+<p></p>
+</div>
+		
+</body>
+</html>
