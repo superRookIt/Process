@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#nav_up {
+	width: 100%;
+	height: 35px;
+	background: #202020;
+	text-align: left;
+}
+
+#nav_up>ul {
+	float: right;
+	padding-right: 5px;
+	width: 480px;
+	height: 25px;
+	color: white;
+}
+
+#nav_up>ul>li {
+	float: left;
+	margin-right: 15px;
+	line-height: 32px;
+	font-size: 13px;
+}
+
+nav {
+	width: 100%;
+	height: 81px;
+	position: relative;
+}
+
+nav>h1 {
+	width: 100px;
+	height: 30px;
+	background: url("../image/ico_set.png") -320px -385px no-repeat;
+	background-size: 800px 800px;
+	position: absolute;
+	left: 40px;
+	top: 25px;
+}
+
+nav>ul:nth-child(2) {
+	width: 750px;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	top: 23px;
+}
+
+nav>ul:nth-child(2) li {
+	float: left;
+	margin-right: 60px;
+	color: #101010;
+	font-weight: 700px;
+	font-size: 22px;
+	line-height: 32px;
+}
+
+nav>ul:nth-child(3) {
+	width: 230px;
+	height: 52px;
+	float: right;
+	position: relative;
+	top: -25px;
+}
+
+nav>ul:nth-child(3) li {
+	float: left;
+	margin-left: 20px;
+	color: #101010;
+	font-size: 12px;
+}
+
+nav>ul:nth-child(3) li:nth-child(1)>a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url("../image/ico_set.png") -584px -320px no-repeat;
+	background-size: 800px 800px;
+	letter-spacing: -2px;
+}
+
+nav>ul:nth-child(3) li:nth-child(1)>a:link {
+	margin-top: -2px;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: -1px;
+	color: #101010;
+}
+
+nav>ul:nth-child(3) li:nth-child(1)>a>span {
+	display: block;
+	width: 50px;
+	height: 20px;
+	position: relative;
+	top: 30px;
+	left: -5px;
+}
+
+nav>ul:nth-child(3) li:nth-child(2)>a {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	background: url("../image/ico_set.png") -628px -320px no-repeat;
+	background-size: 800px 800px;
+	letter-spacing: -2px;
+}
+
+nav>ul:nth-child(3) li:nth-child(2)>a>span {
+	display: block;
+	width: 50px;
+	height: 20px;
+	position: relative;
+	top: 30px;
+	left: -5px;
+}
+
+nav>ul:nth-child(3) li:nth-child(2)>a:link {
+	margin-top: -2px;
+	font-size: 12px;
+	line-height: 20px;
+	letter-spacing: -1px;
+	color: #101010;
+}
+
+section {
+	width: 100%;
+	height: 900px;
+	background: url("../image/main_s04.jpg") no-repeat;
+	background-size: cover;
+}
+
+section>div {
+	width: 80%;
+	height: 200px;
+	margin: 0 auto;
+	position: relative;
+	top: 80px;
+	color: #fff;
+}
+
+section>div>h1 {
+	font-size: 70px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+section>div>p {
+	font-size: 40px;
+	text-align: center
+}
+
+#final {
+	position: relative;
+	min-width: 1260px;
+	height: 213px;
+	margin: 0 auto;
+	background-color: #202020;
+	text-align: center;
+}
+
+#final1 {
+	width: 1180px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#final1>div:nth-child(1) {
+	width: 300px;
+	float: left;
+	padding-top: 36px;
+}
+
+#final1>div>span {
+	display: block;
+	width: 160px;
+	height: 48px;
+	background: url("../image/ico_set.png") -320px -320px no-repeat;
+	background-size: 800px 800px;
+}
+
+#copy {
+	padding: 45px 0 0 1px;
+	color: #808080;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+#f1 {
+	float: left;
+	width: 650px;
+	padding-top: 32px;
+}
+
+#f1_1>ul {
+	width: 625px;
+	margin-left: -25px;
+}
+
+#f1_1>ul>li {
+	float: left;
+	padding-right: 24px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 21px;
+}
+
+#f1_1>ul>li:nth-child(2) {
+	color: #BDD61A;
+	font-weight: 700;
+	font-size: 13px;
+}
+
+#f1_2 {
+	overflow: hidden;
+	padding-top: 18px;
+	width: 630px;
+}
+
+#f1_2>p {
+	float: left;
+	margin-top: 6px;
+	padding-right: 8px;
+	color: #808080;
+	font-size: 12px;
+	line-height: 20px;
+	white-space: nowrap;
+}
+
+#f2_1 {
+	float: right;
+	padding-top: 31px;
+}
+
+#f2_1>p:nth-child(1) {
+	color: #fff;
+	font-weight: 700;
+	font-size: 13px;
+	line-height: 30px;
+	margin-left: 60px;
+}
+
+#f2_1>p:nth-child(2) {
+	float: left;
+	padding-right: 6px;
+	color: #fff;
+	font-size: 17px;
+}
+
+#f2_1>p:nth-child(3) {
+	float: left;
+	color: #fff;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 24px;
+}
+
+#f2_1>p:nth-child(4) {
+	letter-spacing: -0.5px;
+	box-sizing: border-box;
+	display: block;
+	position: absolute;
+	top: 100px;
+	width: 88px;
+	height: 32px;
+	border: 1px solid #ccc;
+	color: #fff;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 30px;
+	text-align: center;
+}
+
+
+

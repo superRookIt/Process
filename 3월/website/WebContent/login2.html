@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/cjcopy.css">
+</head>
+<body>
+	<header>
+		<div id="nav_up">
+			<ul>
+				<li>회원가입</li>
+				<li>로그인</li>
+				<li>고객행복센터</li>
+				<li>배송지역검색</li>
+				<li>기프트카드 등록</li>
+			</ul>
+
+		</div>
+
+		<nav>
+			<h1></h1>
+			<ul>
+				<li>COOKIT소개</li>
+				<li>COOKIT메뉴</li>
+				<li>리뷰</li>
+				<li>이벤트</li>
+				<li>MT쿡킷</li>
+			</ul>
+
+			<ul>
+				<li><a href="#"><span>장바구니</span></a></li>
+				<li><a href="#"><span>메뉴찾기</span></a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- content -->
+	
+	<div id="content" class="logc_content">
+                
+                <div class="login_wrap">
+                    <h1 class="title">로그인</h1>
+
+                    <div class="tab_rad_menu">
+                    	<spana class="hide">이하 회원/로그인 항목은 라디오 버튼이며, 방향키로써 각각 항목 이동 가능합니다.</spana> <!-- 190624_수정 -->
+                        <ul>
+                            <li>
+                                <div class="rad_wrap">
+                                    <input type="radio" id="logc_menu01" name="logc_menu" checked="" class="accessibility-keyboard">
+                                    <label for="logc_menu01"><span class="txt">회원 로그인</span></label>
+                                </div><!-- 스크립트요청사항 : 선택 시 .login_cont none/block -->
+                            </li>
+                            <li>
+                                <div class="rad_wrap">
+                                    <input type="radio" id="logc_menu02" name="logc_menu" class="accessibility-keyboard">
+                                    <label for="logc_menu02"><span class="txt">비회원 주문조회</span></label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 회원로그인 -->
+                    <div id="logc_mem" class="login_cont">
+                        <div class="fieldset">
+                        	<form name="loginForm" onsubmit="return false" onkeydown="if(event.keyCode==13){event.preventDefault(); return false;}">
+								<input type="hidden" name="captchaChkYn" value="">
+	                            <fieldset>
+	                                <legend class="hide">회원 로그인</legend>
+	
+	                                <div class="login_input">
+	                                    <!-- input -->
+	                                    <dl class="in">
+	                                        <dt class="hide"><label for="mem_id">CJ ONE 통합아이디</label></dt>
+	                                        <dd>
+	                                            <div class="input_wrap ui_inputfield">
+	                                                <input type="text" class="txt required" name="mbrId" value="" placeholder="CJ ONE 통합아이디 6~20자" title="아이디를 입력해주세요." maxlength="21" onkeyup="if(event.keyCode==13) loginSendLogin(); checkLength(this, 20, 'CJ ONE ID는 최대 20자까지 입력 가능합니다');">
+	                                                <button class="ico del" title="CJ ONE 통합아이디"><span class="hide">입력 삭제</span></button>
+	                                            </div>
+	                                        </dd>
+	                                    </dl>
+	                                    <dl class="in">
+	                                        <dt class="hide"><label for="mem_pass">CJ ONE 비밀번호</label></dt>
+	                                        <dd>
+	                                            <div class="input_wrap ui_inputfield">
+	                                                <input type="password" class="txt required" name="mbrPwd" placeholder="비밀번호 영문, 특수문자, 숫자혼합 8~12자" title="비밀번호를 입력해주세요." maxlength="13" onkeyup="if(event.keyCode==13) loginSendLogin(); checkLength(this, 12, '비밀번호는 최대 12자까지 입력 가능합니다');">
+	                                                <button class="ico del" title="CJ ONE 비밀번호"><span class="hide">입력 삭제</span></button>
+	                                            </div>
+	                                        </dd>
+	                                    </dl>
+	                                    
+	                                    
+	                                    <!-- 190624_수정(소스 순서 변경) -->
+	                                    <div class="desc_wrap">
+	                                        <div class="chk_wrap">
+	                                            <input type="checkbox" id="logc_id01" name="mbrIdSaveYn" checked="" value="Y" class="accessibility-keyboard">
+	                                            <label for="logc_id01"><span class="txt">아이디 저장</span></label>
+	                                        </div>
+	
+	                                        <div class="find">
+	                                            <a href="https://www.cjone.com/cjmweb/member/find-id.do?coopco_cd=7060&amp;brnd_cd=6130&amp;mcht_no=6130" target="_blank">아이디 찾기</a>
+	                                            <a href="https://www.cjone.com/cjmweb/member/find-passwd.do?coopco_cd=7060&amp;brnd_cd=6130&amp;mcht_no=6130" target="_blank">비밀번호 찾기</a>
+	                                        </div>
+	                                    </div>
+	                                    
+	                                    <!-- 로그인 실패시 노출 -->
+	                                    <div class="auto_protect captchaArea" style="display:none;">
+	                                        <div class="chara_view">
+	                                            <p class="error_msg">비밀번호 5회 오류로 자동입력문자를 입력해주세요.</p><!-- 개발 요청 사항 : 비밀번호 5회 오류 시에 노출 -->
+	                                            <div class="chara_box">
+	                                                <div class="chara"><img class="captchaImgArea" alt=""></div>
+	                                                
+	                                                <div class="btn_support">
+	                                                    <button type="button" class="voice" onclick="formLoginSoundCaptcha()"><span class="txt">음성듣기</span></button>
+	                                                    <button type="button" class="reset" onclick="formLoginLoadCaptcha()"><span class="txt">새로고침</span></button>
+	                                                    <div id="audioPlayer" style="display: none;"></div>
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <fieldset>
+	                                            <legend>자동 입력 방지 문자 입력</legend>
+	                                            <div class="input_wrap ui_inputfield">
+	                                                <input type="text" class="txt" name="captchaAnswer" title="자동입력 방지 문자를 입력해주세요" placeholder="자동 입력 방지 문자" maxlength="6" onkeyup="if(event.keyCode==13) loginSendLogin();">
+	                                                <button class="ico del"><span class="hide">입력 삭제</span></button>
+	                                            </div>
+	                                        </fieldset>
+	                                    </div>
+
+	                                    <div class="btn_wrap full">
+	                                        <!-- button -->
+	                                        <button class="btn green" id="loginBtn" onclick="loginSendLogin()" onkeyup="if(event.keyCode==13) loginSendLogin();"><span>로그인</span></button>
+	                                    </div>
+	                                   
+                                    </div>
+                                    
+	                                <!-- 간편로그인 -->
+	                                <div class="easy_login">
+	                                    <p class="hide">간편로그인</p>
+	                                    <ul>
+	                                        <li class="easy_p"><a href="javascript:void(0);" onclick="cj.loginMobile()"><span class="hide">휴대폰</span></a></li>
+	                                        <li class="easy_k"><a href="javascript:void(0);" onclick="kakaoLogin()"><span class="hide">카카오톡</span></a></li>
+	                                        <li class="easy_n"><a href="javascript:void(0);" id="naverIdLogin_loginButton"><span class="hide">네이버</span></a></li>
+	                                        <li class="easy_f"><a href="javascript:void(0);" onclick="facebookLogin()"><span class="hide">페이스북</span></a></li>
+	                                    </ul>
+	                                </div>
+	
+	                                <!-- 통합회원 회원가입 안내 -->
+	                                <div class="box_induce">
+	                                    <dl>
+	                                        <dt><strong>CJ ONE 통합회원이 아니신가요?</strong></dt>
+	                                        <dd>
+	                                            <p class="txt">CJ ONE 통합회원으로 가입하시면 CJ제일제당의 다양한 서비스(COOKIT, CJ THE MARKET, CJ제일제당 홈페이지)를 이용하실 수 있습니다.</p> <!-- 190531_수정(문구수정) -->
+	                                            <a href="https://www.cjone.com/cjmweb/join.do?coopco_cd=7060&amp;brnd_cd=6130&amp;mcht_no=6130&amp;etc1=PC&amp;etc2=ckgs" target="_blank" class="rec_link"><span>CJ ONE 통합회원 신규가입하기</span></a>
+	                                        </dd>
+	                                    </dl>
+	                                </div>
+	
+	                            </fieldset>
+	                        </form>
+                        </div>
+                    </div>
+                  
+
+                </div>
+                
+			</div>
+	
+
+</body>
+</html>
