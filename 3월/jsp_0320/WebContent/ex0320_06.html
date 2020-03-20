@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function check() {
+		if (form.name.value == "") {
+			alert('이름을 입력해주세요');
+			form.name.focus();
+			return false;
+		}
+
+		if (form.name.value.length < 3) {
+			alert('이름을 3자 이상 입력해주세요');
+			form.name.value="";
+			form.name.focus();
+			return false;
+		} /* else {
+			alert('이름을 제대로 입력하셨습니다');
+			form.kor.focus();
+		} */
+		
+	/* 	if(form.kor.value>100 || form.eng.value>100){
+			alert('100점까지 입력이 가능합니다')
+			form.kor.value="";
+			form.eng.value="";
+			form.kor.focus();
+		}  */
+		
+		if(form.kor.value>100){
+			alert('100점까지 입력이 가능합니다')
+			form.kor.value="";
+			form.kor.focus();
+		}
+		
+		if(form.eng.value>100){
+			alert('100점까지 입력이 가능합니다')
+			form.eng.value="";
+			form.eng.focus();
+		}
+		 
+
+	}
+</script>
+
+</head>
+
+<body>
+
+	<form name="form" action="" method="post">
+		<label>학생 이름 : </label><input type="text" name="name"><br>
+		<label>국어 점수 : </label><input type="text" name="kor"><br>
+		<label>영어 점수 : </label><input type="text" name="eng"><br>
+		<label>합계 : </label><input type="text" name="total" disabled><br>
+
+		<input type="button" onclick="check()" value="데이터입력">
+
+	</form>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	
+	function check() {
+		if (form.id.value == "" || form.major.value == "") {
+			alert('이름을 입력해주세요');
+			form.id.focus();
+			return false;
+		}
+	}
+	
+	function check2() {
+		if (form.age.value>=18) {
+			alert('성인입니다');
+		}
+		else{
+			alert('미성년입니다');
+		}
+	}
+	
+	
+	
+</script>
+</head>
+<body>
+	<h2>[성적 입력]</h2>
+	<form name="form" action="" method="post">
+	
+		<label for="id"> 이름 : </label>
+		<input type="text" name="id" id="id"><br>
+		
+		<label for="major"> 학과 : </label>
+		<input type="text" name="major" id="major"><br> 
+		<label for="kor">국어 점수 : </label>
+		<input type="text" name="kor" id="kor"><br>
+		<input type="button" value="성적 입력" onclick="check()"><br>
+		
+		<label for="age"> 나이 : </label>
+		<input type="text" name="age" id="age"><br>
+		<input type="button" value="나이 입력" onclick="check2()">
+		
+	</form>
+
+</body>
+</html>

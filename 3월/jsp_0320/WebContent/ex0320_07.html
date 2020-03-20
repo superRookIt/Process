@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	/* 	var x = prompt('숫자를 입력해주세요');
+	 var result = (x > -x) ? x : -x;//절대값
+	 document.write(x + "의 절대값은 " + result + "입니다"); */
+
+	var x = prompt('1번째 데이터 값을 입력하세요');
+	var y = prompt('2번째 데이터 값을 입력하세요');
+	var z = prompt('3번째 데이터 값을 입력하세요')
+	document.write(typeof x + "<br>");//String
+	x = parseInt(x); // 숫자로 변환
+	document.write(typeof x + "<br>");//Number
+	y = parseInt(y);
+	z = parseInt(z);
+
+	var max = (x > y && x > z) ? x : (y > z) ? y : z;
+	var min = (x < y && x < z) ? x : (y < z) ? y : z;
+	document.write("제일 큰 값 : " + max + "<br>");
+	document.write("제일 작은 값 : " + min + "<br>");
+
+	/* 	var re;
+	 re = (a > b) ? a : b;
+	 document.write("제일 큰 값 : " + re + "<br>"); */
+
+	/* re = (a > b) ? a - b : b - a;
+	document.write("큰 값에서 작은 값을 뺀 결과 : " + re + "<br>"); */
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var num;
+		var obj = null;
+
+		document.write(typeof 100 + "<br>");
+		document.write(typeof 10.5 + "<br>");
+		//정수, 실수 num
+
+		document.write(typeof "홍길동" + "<br>");
+		document.write(typeof true + "<br>");
+
+		document.write(typeof [ 1, 2, 3 ] + "<br>");
+		document.write(typeof {
+			name : '홍길동',
+			age : 25
+		} + "<br>");
+		//object 객체(length를 가지고 있는) ★
+
+		document.write(typeof num + "<br>");
+		document.write(typeof obj + "<br>");
+
+		/* 실행결과 : 
+		 number
+		 number
+		 string
+		 boolean
+		 object
+		 object
+		 undefined
+		 object
+		 */
+
+		stdName = "홍길동";
+		com_grade = 96;
+
+		var stdName;
+		var com_grade;
+		document.write("학생의 이름 : " + stdName + "<br>");
+		document.write("컴퓨터의 점수 : " + com_grade + "<br>");
+
+		document.write("--------------" + "<br>")
+
+		var num = 10;
+		document.write("num의 변수 : " + typeof num + "타입</p>");
+
+		var num1 = 10;
+		document.write("num1의 변수 : " + typeof num1 + "타입</p>");
+
+		var g_value1 = 20;
+		var g_value2 = 30;
+
+		function add() {
+			var local_value = 10;
+			document.write("지역변수 값 : " + local_value + "</p>");
+		}
+
+		function add1(a, b) {
+			var total = a + b;
+			document.write("합계 값 : " + total + "</p>");
+		}
+
+		document.write("전역변수 값 : " + g_value1 + "</p>");
+		document.write("전역변수 값 : " + g_value2 + "</p>");
+
+		add();
+		add1(3, 4);
+		add1("홍길동", 4);
+
+		/* 실행결과 : 
+		전역변수 값 : 20
+		전역변수 값 : 30
+		지역변수 값 : 10
+		합계 값 : 7
+		합계 값 : 홍길동4 */
+
+		var kor = 100;
+
+		/* 메소드에 리턴타입 변수 안적어도 됌 */
+		function get_grade() {
+			var kor = 95;
+			return kor;
+		}
+
+		get_grade();
+		document.write("국어점수는 " + kor + "입니다 <br>");
+		document.write("국어점수는 " + get_grade() + "입니다");
+
+		/* 실행결과 : 
+			국어점수는 100입니다
+			국어점수는 95입니다 */
+
+		/* 메소드에 리턴타입 변수 안적어도 됌 */
+		function get_grade() {
+			var kor = 95;
+			document.write("국어점수는 " + kor + "입니다 <br>");
+		}
+
+		function add(a, b) {
+			var total = a + b;
+			document.write("두 수는 " + a + " " + b + "입니다 <br>");
+			/* document.write("두 수는 " + (a+b) + "입니다 <br>"); */
+			document.write("두 수의 합계는 " + total + "입니다 <br>");
+		}
+	</script>
+
+
+	<button onclick="get_grade()">버튼</button>
+	<button onclick="add(50,60)">50+60의 값</button>
+
+	<!-- 	두 수는 50 60입니다
+	                    두 수의 합계는 110입니다 -->
+</body>
+</html>

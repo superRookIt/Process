@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+		var inc = 1;
+		var dec = 5;
+		
+		var r1 = r2 = 0;
+		r1 = 15 % 6;
+		document.write("15%6 : " + r1 + "<br>");
+		r2 = inc * dec;
+		document.write("inc*dec : " + r2 + "<br>")
+		
+		document.write("inc++ : " + inc++ + "<br>"); /* 값을 전달하고 더해줌 */
+		document.write("++inc : " + ++inc + "<br>");
+		document.write("dec-- : " + dec-- + "<br>"); /* 값을 전달하고 빼줌  */
+		document.write("--dec : " + --dec + "<br>");
+		
+		/* 실행결과 : 
+		15%6 : 3
+		inc*dec : 5
+		inc++ : 1
+		++inc : 3
+		dec-- : 5
+		--dec : 3 */
+		
+		var x = 5;
+		var y = "5";
+		var result;
+
+		result = (x > y); 
+		document.write('x>y : ' + result + "<br>");
+		result = (x == y); //x와 y가 같냐
+		document.write('x==y : ' + result + "<br>");
+		result = (x === y); //x와 y가 타입도 같고 , 값도 같냐
+		document.write("x===y : " + result + "<br>")
+		result = (x != y); //x와 y가 값이 다르냐
+		document.write("x!=y : " + result + "<br>")
+		result = (x !== y);//x와 y가 값이 다르거나 또는 타입 다른지 ★
+		document.write("x!==y : " + result + "<br>")
+		
+		/* 실행결과 : 
+		x>y : false
+		x==y : true
+		x===y : false
+		x!=y : false
+		x!==y : true */
+		
+		var z=5;
+		
+		if(z>=0 && z<=10){
+			document.write('0<=x<=10 사이의 숫자입니다')
+		}
+		else{
+			document.write('땡 ^^')
+		}
+		
+		var a= prompt('숫자를 입력하세요.')/* prompt : 입력창을 만듦 */
+		
+		
+		
+	</script>
+
+
+
+</body>
+</html>
