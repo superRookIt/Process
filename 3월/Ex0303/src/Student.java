@@ -2,10 +2,10 @@
 public class Student {
 
 	static int count = 0;
-	int hak_num; // 학번
+	int hak_num; 
 	String name;
-	String major; // 과
-	int grade; // 학년
+	String major; 
+	int grade; 
 
 	int kor;
 	int eng;
