@@ -10,11 +10,11 @@ public class Student {
 		count++;
 		hak_num = count;
 
-	}// ÃÊ±âÈ­ ºí·°
+	}// ì´ˆê¸°í™” ë¸”ëŸ­
 
 	Student() {
 
-	}// ±âº» »ı¼ºÀÚ
+	}// ê¸°ë³¸ ìƒì„±ì
 
 	Student(String name, int grade) {
 		this.name = name;
