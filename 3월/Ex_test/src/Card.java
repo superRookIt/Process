@@ -1,7 +1,6 @@
 
 public class Card {
 
-//	static을 붙여야 다른 클래스에서도 사용가능
 	static final int kind_max = 4;
 	static final int num_max = 13;
 
