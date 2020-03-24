@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		/* var result;
+
+		function add(name, n) {
+			document.write("[ "+name + " ] 학생이 1부터 " + n + "까지 덧셈 수행 <br>");
+			var sum = 0;
+			for (var i = 1; i <= n; i++) {
+				sum += i;
+			}
+			return sum;
+		}
+
+		result = add("홍길동", 50);
+		document.write('결과 값 : '+result+"<br>");
+		result = add("강감찬", 100);
+		document.write('결과 값 : '+result); */
+
+		var result1 = 0;
+		var result2 = 0;
+
+		function add(m, n) {
+			document.write(m + "에서 " + n + "까지의 합을 구합니다. <br>");
+			var sum = 0;
+			for (var i = m; i <= n; i++) {
+				sum += i;
+			}
+			return sum;
+		}
+
+		function multi(a, b) {
+			document.write(a + "와 " + b + "의 곱셈값을 구합니다. <br>")
+			var mul = 0;
+			mul = a * b;
+			return mul;
+		}
+
+		result1 = add(2, 4);//return값 sum을 받음
+		document.write("결과 값 : " + result1 + "<br>")
+		result2 = multi(2, 4);//return값 mul을 받음
+		document.write("결과 값 : " + result2 + "<br>")
+	</script>
+
+
+</body>
+</html>

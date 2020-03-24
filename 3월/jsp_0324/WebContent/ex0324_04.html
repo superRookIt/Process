@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+	
+		var text1 = "함수 선언전 호출 에러";
+		var text2 = "함수 선언후 호출만 가능";
+
+		print(text1); //아직 변수에 함수가 입력이 되지 않은 상태
+
+		/* 	var print= function(msg){
+		 document.write("함수 호출 메세지 : "+msg+"<br>");		
+		 } 
+		 무명함수는 호출전에 쓰일 순 없음 
+		 text1이 안나옴 */
+
+		function print(msg) {
+			document.write("함수 호출 메세지 : " + msg + "<br>");
+		}
+		//text1이 나옴 
+
+		print(text2);
+
+		/* function print(name, age) {
+			document.write('당신의 이름은 ' + name + "<br>");
+			document.write('당신의 나이는 ' + age + "<br>");
+
+		} */
+	</script>
+
+	<!-- <button onclick="print('홍길동',21)">학생정보</button> -->
+	<!-- "" 안에는 '' -->
+
+</body>
+</html>

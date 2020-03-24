@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		var lotto = [];
+
+		function insert() {
+			var i;
+			for (i = 0; i <= 45; i++) {
+				lotto[i] = i + 1;//1~100까지 숫자 입력
+			}
+			print();
+		}//f
+
+		function del() {
+			
+			var i;
+			for (i = 0; i < lotto.length; i++) {
+				if (i % 2 == 0) {
+					lotto[i] = 0;
+				}
+				continue;
+			}
+			print();
+		}
+
+		function print() {
+			var i;
+			for (i = 0; i < lotto.length; i++) {
+				document.write('lotto [ ' + i + ' ] 번째 값 : ' + lotto[i]+ "<br>");
+			}
+			document.write('<a href="ex0324_14.html">돌아가기</a><br>');
+		}
+		
+		insert(); //★
+		
+	</script>
+	
+	<button onclick="del()">배열객체홀수삭제</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+		/* var com = [ 1, 5, 10, 20, 30, 90, 110, 120, 150, 200 ]; */
+		var com = new Array(1, 5, 10, 20, 30, 90, 110, 120, 150, 200);
+
+		function print() {
+			var i = 0;
+			var sum = 0;
+			for (i = 0; i < com.length; i++) {
+				if (com[i] === undefined) { // ===
+					continue;
+				}
+				sum += com[i];
+				document.write(i + "번째 합 : " + sum + "<br>")
+			}
+
+			document.write("학생 수 : " + com.length + "<br>")
+			document.write("총 합계 : " + sum + "<br>")
+
+			/* return sum; */
+		}
+
+		print();
+		
+	/* 	var total = print();
+		document.write("총 합계 : " + total + "<br>") */
+		
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var lotto = [];
+
+		function insert() {
+			var i;
+			for (i = 0; i <= 199; i++) {
+				lotto[i] = i + 1;//1~200까지 숫자 입력
+			}
+			print();
+		}//f
+
+		function del() {
+			//(lotto[i]%3==0) 이것도 됨
+			for (var i = 2; i < lotto.length; i += 3)
+			/* i+=3 뒤에 ; 붙이지 말기...for의 마지막
+			에러 안알려줘서 너무 힘들어..*/
+			{
+				lotto[i] = 0;
+			}
+			print();
+		}
+
+		function add() {
+			var mul = 0;
+			//(lotto[i]%5==0) 이것도 됨
+			for (var i = 4; i < lotto.length; i += 5) {
+				mul += lotto[i];
+				document.write("5의 배수 : " + lotto[i] + "<br>")
+			}
+			document.write("5의 배수 합 : " + mul + "<br>");
+			document.write('<a href="ex0324_15.html">돌아가기</a><br>');
+		}
+
+		function print() {
+			var i;
+			for (i = 0; i < lotto.length; i++) {
+				document.write('lotto [ ' + i + ' ] 번째 값 : ' + lotto[i]
+						+ "<br>");
+			}
+
+			document.write('배열 개수 : ' + lotto.length + "<br>");
+			document.write('<a href="ex0324_15.html">돌아가기</a><br>');
+		}
+
+		//배열 0개로 초기화
+		function dea() {
+			lotto.length = 0;
+			print();
+			document.write('<a href="ex0324_15.html">돌아가기</a><br>');
+		}
+		
+		//배열 전체 문자열 변환
+		function join() {
+			var j = lotto.join();
+			var j2 = lotto.join('-');
+			var j3 = lotto.join('/');
+			var j4 = lotto.join(' 그리고 ');
+			document.write("join 결과 1 : "+j+"<br>");
+			document.write("join 결과 2 : "+j2+"<br>");
+			document.write("join 결과 3 : "+j3+"<br>");
+			document.write("join 결과 4 : "+j4+"<br>");
+			document.write('<a href="ex0324_15.html">돌아가기</a><br>');
+		}
+
+		insert();
+		
+	</script>
+
+	<button onclick="del()">3의 배수 초기화</button>
+	<button onclick="add()">5의 배수 합계</button>
+	<button onclick="dea()">배열 초기화</button>
+	<button onclick="join()">배열전체문자열로</button>
+	
+</body>
+</html>
