@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>홍길동 차 스펙</p>
+	<p id="carname"></p>
+	<p id="carcolor"></p>
+	<p>강감찬 차 스펙</p>
+	<p id="carname2"></p>
+	<p id="carcolor2"></p>
+
+	<script type="text/javascript">
+	
+	//함수 선언
+		function Car(name, color, speed) {
+			this.name = name;
+			this.color = color;
+			this.speed = speed;
+			this.speed_up = function() {
+				return this.speed + 10;
+			};
+			this.speed_down=function(){
+				return this.speed-10;
+			};
+		}
+		
+		var hong = new Car('sonata','blue',100);
+		var kang = new Car('jeep','red',70);
+		
+		var cname=document.getElementById("carname");
+		cname.textContent='홍길동 자동차 이름 : '+hong.name; 
+		
+		var ccolor=document.getElementById("carcolor");
+		ccolor.textContent='홍길동 자동차 색상 : '+hong.color;
+		
+		var kname=document.getElementById("carname2");
+		kname.textContent='강감찬 자동차 이름 : '+kang.name;
+		
+		var kcolor=document.getElementById("carcolor2");
+		kcolor.textContent='강감찬 자동차 색상 : '+kang.color;
+		
+		
+		
+	</script>
+</body>
+</html>

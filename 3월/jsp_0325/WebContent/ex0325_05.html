@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+	
+	var stu_num=["k202001","k202002","e202001","e202001"
+		,"e202003","m202001","m202002","c202001","c202002"
+		,"k202003","e202004","c202003"];
+	
+	//컴퓨터 학과 찾는 함수
+	function com(value){
+		if(value.indexOf("c")!= -1){
+			return value;
+		}
+	}
+	
+	//배열분리 함수 호출
+	function div(){
+		var com2 = stu_num.filter(com);
+		document.write("전체학생배열 : "+stu_num+"<br>");
+		document.write("컴퓨터 학생배열 : "+com2+"<br>");
+		document.write("<a href='ex0325_05.htm'>돌아가기</a>");
+	}
+	
+		/* var data = [ 43, 12, 10, 78, 60, 55, 96, 45, 35, 28 ];
+
+		function filter(value) {
+			return value >= 18;
+		} //18 이상인것만 필터
+
+		var newdata =data.filter(filter); */
+		
+		/* data.indexOf("5");  */
+		
+		/* document.write("필터 전 배열 : "+data+"<br>")
+		document.write("필터 후 배열 : "+newdata+"<br>") */
+		
+		
+	</script>
+	
+	<button onclick="div()">컴퓨터학과 학생 배열만들기</button>
+
+</body>
+</html>

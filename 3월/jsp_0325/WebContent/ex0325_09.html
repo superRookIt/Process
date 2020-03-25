@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+p {
+	width: 400px;height: 200px;border: 1px solid black;margin: 20px;text-align:center;font-size:20px;color:red;
+    box-sizing: border-box;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+	<p id="carname"></p>
+	<p id="carcolor"></p>
+	<p id="carspeed"></p>
+	
+	<!-- 스크립트 위치를 p보다 밑에 놔야.. -->
+	<script type="text/javascript">
+
+	var car = new Object(); //Object 앞에 대문자!!!
+	car.name = "sonata";
+	car.speed = 100;
+	car.color = "blue";
+	car.speed = function() {
+		return this.speed + 10;
+	}
+	
+	var cname = document.getElementById("carname");
+	cname.textContent="자동차 이름 : "+car.name;
+	
+	document.getElementById("carcolor").textContent="자동차 색상 : "+car.color;
+	
+	/* var car2 = {
+		name = "sonata",
+		speed = 100,
+		color = "white",
+		speed = function(){
+		return this.speed+50;
+			}
+	} */
+	
+</script>
+
+</body>
+</html>

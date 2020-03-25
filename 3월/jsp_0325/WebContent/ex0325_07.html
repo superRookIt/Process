@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+	function seven() {
+		
+		var a1 = [];
+
+		for (var i = 0; i < 7; i++) {
+			a1[i] = [ 14 * i + 1, 14 * i + 3, 14 * i + 5, 14 * i + 7,
+					7 * i + 9, 14 * i + 11, 14 * i + 13 ];
+		}
+
+		for (var i = 0; i < a1.length; i++) {
+			for (var j = 0; j < a1[i].length; j++) {
+				document.write(a1[i][j] + " ");
+			}
+			document.write("<br>");
+		}
+
+	}
+</script>
+</head>
+<body>
+<button onclick="seven()">7차원 배열 만들기</button>
+</body>
+</html>

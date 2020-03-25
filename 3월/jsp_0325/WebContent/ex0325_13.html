@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p id="dclock"></p>
+
+	<script type="text/javascript">
+	
+		function digclock() {
+			var today = new Date();
+			var time = today.getHours() + "시" + today.getMinutes() + "분"
+					+ today.getSeconds() + "초";
+			document.getElementById("dclock").innerHTML = time;
+			setTimeout('digclock()', 1000);
+		}
+
+		digclock();
+		
+	</script>
+</body>
+</html>

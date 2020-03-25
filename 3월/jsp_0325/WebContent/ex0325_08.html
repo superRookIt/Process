@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+p {
+	width: 400px;height: 200px;border: 1px solid black;margin: 20px;text-align:center;font-size:20px;color:red;
+    box-sizing: border-box;
+}
+</style>
+<title>Insert title here</title>
+</head>
+<body>
+
+	<p id="var1"></p>
+	<p id="var2"></p>
+	<p id="var3"></p>
+
+<!-- 
+스크립트 위치를 <body>바로 밑으로 하면 안됨..왜지???
+지금처럼 <p>밑쪽으로 놔야 제대로 됨 
+-->
+<script type="text/javascript">
+		
+	var car = {
+		name : "sonata",
+		speed : 100,
+		color : "white", // 콤마 , 해주기
+
+		m1 : function() {
+			return this.name
+		}, // 콤마 , 해주기 
+
+		m2 : function(a) {
+			result = this.speed + a;
+			return result;
+		}, // 콤마 , 해주기 
+
+		m3 : function(a, b) {
+			name = this.m1();
+			/* result = this.m2(a);+ b; */
+			result = this.speed + a + b;
+			return name +" : "+result;
+		} //마지막이니까 콤마 , 안함
+
+	};
+
+	document.getElementById("var1").innerHTML = car.m1();
+	document.getElementById("var2").innerHTML = car.m2(50);
+	document.getElementById("var3").innerHTML = car.m3(50, 100);
+
+	/* document.getElementById("var1").innerHTML = " 자동차 이름 : "+ car.name;
+	document.getElementById("var2").innerHTML = " 자동차 속도 : "+ car.speed;
+	document.getElementById("var3").innerHTML = " 자동차 색상 : "+ car.color; */
+</script>
+
+</body>
+</html>

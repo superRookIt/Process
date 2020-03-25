@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td id="s1hak"></td>
+			<td id="s1name"></td>
+			<td id="s1kor"></td>
+			<td id="s1eng"></td>
+			<td id="s1total"></td>
+			<td id="s1avg"></td>
+		</tr>
+		<tr>
+			<td id="s2hak"></td>
+			<td id="s2name"></td>
+			<td id="s2kor"></td>
+			<td id="s2eng"></td>
+			<td id="s2total"></td>
+			<td id="s2avg"></td>
+		</tr>
+		<tr>
+			<td id="s3hak"></td>
+			<td id="s3name"></td>
+			<td id="s3kor"></td>
+			<td id="s3eng"></td>
+			<td id="s3total"></td>
+			<td id="s3avg"></td>
+		</tr>
+
+
+	</table>
+
+<!-- script는 html 위에 있으면 적용 안됨, 밑에 있어야 됨 -->
+
+	<script type="text/javascript">
+	
+		
+		function Student(hak, name, kor, eng) {
+
+			this.hak = hak;
+			this.name = name;
+			this.kor = kor;
+			this.eng = eng;
+			
+			//this를 다 붙어야.....이해안돼..ㅡㅡ..
+			this.total = this.kor + this.eng;
+			this.avg = this.total / 2;
+		}
+
+		var hong = new Student(1, "홍길동", 100, 80);
+		var kang = new Student(2, "강감찬", 99, 87);
+		var yu = new Student(3, "유관순", 100, 99);
+
+		
+		//s1//
+		
+		var s1hak = document.getElementById("s1hak");
+		s1hak.textContent = '학번 : ' + hong.hak;
+
+		var s1name = document.getElementById("s1name");
+		s1name.textContent = '이름 : ' + hong.name;
+
+		var s1kor = document.getElementById("s1kor");
+		s1kor.textContent = '국어점수 : ' + hong.kor;
+
+		var s1eng = document.getElementById("s1eng");
+		s1eng.textContent = '영어점수 : ' + hong.eng;
+
+		var s1total = document.getElementById("s1total");
+		s1total.textContent = '합계 : ' + hong.total;
+
+		var s1avg = document.getElementById("s1avg");
+		s1avg.textContent = '평균 : ' + hong.avg;
+
+		//s2//
+
+		var s2hak = document.getElementById("s2hak");
+		s2hak.textContent = '학번 : ' + kang.hak;
+
+		var s2name = document.getElementById("s2name");
+		s2name.textContent = '이름 : ' + kang.name;
+
+		var s2kor = document.getElementById("s2kor");
+		s2kor.textContent = '국어점수 : ' + kang.kor;
+
+		var s2eng = document.getElementById("s2eng");
+		s2eng.textContent = '영어점수 : ' + kang.eng;
+
+		var s2total = document.getElementById("s2total");
+		s2total.textContent = '합계 : ' + kang.total;
+
+		var s2avg = document.getElementById("s2avg");
+		s2avg.textContent = '평균 : ' + kang.avg;
+
+		//s3//
+
+		var s3hak = document.getElementById("s3hak");
+		s3hak.textContent = '학번 : ' + yu.hak;
+
+		var s3name = document.getElementById("s3name");
+		s3name.textContent = '이름 : ' + yu.name;
+
+		var s3kor = document.getElementById("s3kor");
+		s3kor.textContent = '국어점수 : ' + yu.kor;
+
+		var s3eng = document.getElementById("s3eng");
+		s3eng.textContent = '영어점수 : ' + yu.eng;
+
+		var s3total = document.getElementById("s3total");
+		s3total.textContent = '합계 : ' + yu.total;
+
+		var s3avg = document.getElementById("s3avg");
+		s3avg.textContent = '평균 : ' + yu.avg;
+	</script>
+
+
+
+</body>
+</html>

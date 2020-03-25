@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script type="text/javascript">
+	var lotto = [];
+
+	function insert() {
+		for (i = 0; i < 45; i++) {
+			lotto[i] = i + 1;
+		}
+
+		for (i = 0; i < lotto.length; i++) {
+			document.write(lotto[i] + " ")
+
+			if (lotto[i] % 5 == 0) {
+				document.write('<br>');
+			}
+
+		}
+
+		document.write("배열의 크기 : " + lotto.length + "<br>");
+		document.write("<a href='ex0325_01.html'>돌아가기</a>");
+
+	}
+
+	function del() {
+		for (i = 0; i < 45; i++) {
+			lotto[i] = 0;
+		}
+		print();
+	}
+
+	function print() {
+
+		for (i = 0; i < lotto.length; i++) {
+			document.write(lotto[i] + " ")
+			if (i % 5 == 0) {
+				document.write('<br>');
+			}
+
+		}
+		document.write('<br>');
+		document.write("배열의 크기 : " + lotto.length + "<br>");
+		document.write("<a href='ex0325_01.html'>돌아가기</a>");
+	}
+
+	insert();
+</script>
+
+</head>
+<body>
+
+	<button onclick="del()">데이터 초기화</button>
+
+
+</body>
+</html>
