@@ -1,8 +1,8 @@
 
 public class Medic extends Groundunit implements tran {
-	// new -> class-> browse -> (superclass Section) Unit °Ë»ö -> ok -> <superclass :
-	// Unit>
-	// @Override ¿À¹ö¶óÀÌµù
+	
+	// new -> class-> browse -> (superclass Section) Unit ê²€ìƒ‰ -> ok -> <superclass : Unit>
+        // @Override ì˜¤ë²„ë¼ì´ë”©
 
 	Medic() {
 		super(2);
