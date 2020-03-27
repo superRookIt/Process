@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function text() {
+
+		document.getElementById("msg").style.color = "blue";
+		document.getElementById("msg").style.fontSize = "30px";
+		document.getElementById("msg").style.border = "1px solid black";
+	}; //끝에 ; 붙이기!!
+
+	function text1() {
+		document.getElementById("msg").style.color = "";
+		document.getElementById("msg").style.fontSize = "";
+		document.getElementById("msg").style.border = "";
+	}; //끝에 ; 붙이기!!
+
+	
+	//function 이름을 hidden으로 하면 적용이 안됌
+	function hi() {
+		document.getElementById("msg").style.visibility = "hidden";
+	};//끝에 ; 붙이기!!
+
+	//function 이름을 visible으로 하면 적용이 안됌
+	function vi() {
+		document.getElementById("msg").style.visibility = "visible";
+	};//끝
+	
+</script>
+</head>
+<body>
+	<p id="msg">문서 객체 스타일 변경하기</p>
+	<button onclick="text()">텍스트 스타일 변경</button>
+	<button onclick="text1()">처음형태로</button>
+	<button onclick="hi()">텍스트 스타일 취소</button>
+	<button onclick="vi()">텍스트 스타일 보이기</button>
+</body>
+</html>

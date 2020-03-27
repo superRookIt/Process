@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+img{width:300px;}
+
+</style>
+<script type="text/javascript">
+	function bigger() {
+		document.getElementById("bee").style.width="600px";
+		document.getElementById("bee").style.border="1px solid black";
+	} // ; 안붙여도 되네....
+	
+	function defal(){
+		document.getElementById("bee").style.width="300px";
+		document.getElementById("bee").style.border="";
+	} // ; 안붙여도 되네....
+	
+</script>
+</head>
+<body>
+<img id="bee" alt="" src="img/01.jpg">
+<button onclick="bigger()">이미지 확대</button>
+<button onclick="defal()">이미지 원래대로</button>
+	
+</body>
+</html>

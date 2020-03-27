@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+th {
+	width: 700px;
+	text-align: center;
+	vertical-align: middle;
+	border-bottom: 1px solid #d5d5d5;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 20px;
+}
+
+#wrap {
+	background: #2c2b2b !important;
+	color: #fff !important;
+}
+
+td, p {
+	width: 300px;
+}
+
+#t1 tr {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+#t1 td {
+	background: #585858 !important;
+	color: #fff !important;
+	text-align: left !important;
+	padding-left: 10px !important;
+	vertical-align: middle;
+	padding: 14px 0;
+	line-height: 17px;
+}
+
+#ta1 th {
+	height: 47px;
+	border-bottom: none;
+	padding: 0;
+	background-color: gray;
+	border-color: #c9c9c9;
+}
+
+.black {
+	width: 300px;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.select {
+	width: 700px;
+	text-align: center;
+}
+
+#ta2 td {
+	padding-left: 8px;
+	font-size: 13px;
+	color: #2e2e2e;
+	vertical-align: middle;
+	padding: 14px 0;
+	border-bottom: 1px solid #d5d5d5;
+}
+
+.tar {
+	width: 200px;
+}
+
+.bdnone {
+	width: 400px;
+}
+
+.redTxt {
+	font-size: 20px;
+	color: red;
+	font-weight: bold;
+}
+
