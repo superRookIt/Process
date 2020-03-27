@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#ini{width:200px; height:30px; font-size:20px;
+display:inline-block;}
+
+#move{border:1px solid black;margin:20px auto 0 auto;text-align: right;
+width:300px;}
+
+#move img{cursor:pointer;position: relative;width:300px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* div{width:800px; height:30px; margin:0 auto;padding-top:10px;
+text-align: center;background: yellow; border:1px solid #c3c3c3}
+
+#s01{cursor:pointer;}
+
+#p01{background:#efefef;height:200px; cursor:pointer;}
+
+#stop {margin:0 auto;width:200px;display:block;}
+
+#f01{cursor:pointer; margin:0 auto;}
+ */
