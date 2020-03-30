@@ -1,9 +1,8 @@
 
 public class Mylotto {
 
-	int num ; // ¡Ú¡Ú¡Ú
+	int num ; 
 	int same;
 	int rank;
 	int reward;
-
 }
