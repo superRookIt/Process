@@ -1,19 +1,18 @@
-
 public class Samsungtv extends Product {
-
-	static int count;
-	int pro_n = 1000;
-
-	{
-		pro_n = ++count;
-
-	} // ÀÎ½ºÅÏ½º ÃÊ±âÈ­?
-
-	Samsungtv() {
-
-		price = 1000;
-		name = "TV";
-
-	}// default »ı¼ºÀÚ
-
+ 
+    static int count;
+    int pro_n = 1000;
+ 
+    {
+        pro_n = ++count;
+ 
+    } // ì¸ìŠ¤í„´ìŠ¤ ì´ˆê¸°í™”?
+ 
+    Samsungtv() {
+ 
+        price = 1000;
+        name = "TV";
+ 
+    }// default ìƒì„±ì
+ 
 }
