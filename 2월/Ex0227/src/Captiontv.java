@@ -1,7 +1,7 @@
 
 public class Captiontv extends TV {
 
-	String text = "Ä¸¼Çon";
+	String text = "ìº¡ì…˜on";
 
 	void caption() {
 		System.out.println(text);
