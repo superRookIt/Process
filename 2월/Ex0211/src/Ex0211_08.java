@@ -5,7 +5,6 @@ public class Ex0211_08 {
 		
 		//[7][9]
 		
-		
 		 int[][] se = new int[7][9];
         
         for(int i =0; i<se.length; i++) {
