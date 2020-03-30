@@ -33,17 +33,15 @@ public class Ex0211_15 {
 //            
 //        }
  
-        for (
- 
-                int i = 0; i < c.length; i++) {
+        for (int i = 0; i < c.length; i++) {
             select = (int) (Math.random() * 4);
             c[i] = d[select];
         }
  
         System.out.println("1차원 배열 값 : ");
+     
         for (int i = 0; i < c.length; i++) {
             System.out.print(c[i] + " ");
- 
         }
  
     }
