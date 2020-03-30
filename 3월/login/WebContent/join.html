@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function open_idch(){
+	//새 창 띄우기("pop[팝업] 파일이름", "창이름", "팝업창 옵션")
+	window.open("pop.html","아이디 체크 ^^","width=600, height=400, resizable=no, scrollbars=no");
+	
+}
+
+</script>
+
+
+
+</head>
+<body>
+
+<h1>회원가입</h1>
+
+<form action="join_com.jsp" name="join" method="get">
+<label>아이디</label>
+<input type="text" name="j_id" id="j_id" readonly required> 
+<input type="button" onclick="open_idch()" value="아이디중복체크"><br>
+
+<label>이름 : </label>
+<input type="text" name="j_name" id="j_name" required><br>
+<input type="submit" value="전송">
+
+</form>
+
+</body>
+</html>

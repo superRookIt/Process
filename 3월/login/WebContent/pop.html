@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+
+function id_db(){
+	//db와 연동 후 아이디가 있는지 확인하는 형태
+	document.getElementById("ch_text").innerHTML="아이디 사용이 가능합니다.";
+}
+
+function join_input(){
+	opener.document.getElementById("j_id").value=document.getElementById("ch_id").value;
+    window.close();
+}
+
+</script>
+
+<h1>아이디 중복체크</h1>
+
+
+<form>
+<label>아이디 중복 체크</label>
+<input type="text" id="ch_id">
+<input type="button" value="아이디 확인" onclick="id_db()"><br>
+<p id="ch_text"></p><br>
+<input type="button" value="메인으로 이동" onclick="join_input()">
+</form>
+
+
+
+</body>
+</html>
