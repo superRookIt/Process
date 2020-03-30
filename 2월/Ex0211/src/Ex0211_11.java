@@ -12,7 +12,7 @@ public class Ex0211_11 {
 
 		for (int i = 0; i < two.length; i++) {
 			for (int j = 0; j < two[i].length; j++) {
-				two[i][j] = ((i * 8) + j + 1) * 2; // 1*2~40*2 �ڡڡڡڡڡڡڡڡڡڡڡڡڡ�
+				two[i][j] = ((i * 8) + j + 1) * 2; // 1*2~40*2 ★★★
 
 			}
 
