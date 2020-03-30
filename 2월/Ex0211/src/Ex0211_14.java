@@ -50,7 +50,7 @@ public class Ex0211_14 {
 
 		System.out.println();
 
-		System.out.print("e의 배열 : );
+		System.out.print("e의 배열 : ");
 		for (int i = 0; i < e.length; i++) {
 			System.out.print(e[i] + " / ");
 		}
