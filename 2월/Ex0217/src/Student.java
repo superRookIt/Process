@@ -1,12 +1,12 @@
 
 public class Student {
 
-	String name; // ÀÌ¸§
-	int kor; // ±¹¾î
-	int eng; // ¿µ¾î
-	int math;// ¼öÇĞ
-	int total; // ÇÕ°è
-	double avg; // Æò±Õ
+	String name; // ì´ë¦„
+	int kor; // êµ­ì–´
+	int eng; // ì˜ì–´
+	int math;// ìˆ˜í•™
+	int total; // í•©ê³„
+	double avg; // í‰ê· 
 
 
 	void total() {
@@ -16,8 +16,5 @@ public class Student {
 	void avg() {
 		avg = total / 3;
 	}
-
-	
-	
 	
 }
