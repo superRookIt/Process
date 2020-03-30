@@ -15,9 +15,11 @@ public class Ex0226_01 extends Object {
 }// class
 
 class Parent extends Object {
+	
 	int x = 20;
 
 	Parent() {
+		
 		super();
 
 	}
@@ -25,17 +27,22 @@ class Parent extends Object {
 }
 
 class Child extends Parent {
+	
 	int x = 50;
 
 	Child() {
+		
 		super();
+		
 	}
 
 	void method() {
-		int x = 100;
-		System.out.println("local X : " + x);
-		System.out.println("¿ŒΩ∫≈œΩ∫ x : " + this.x);
-		System.out.println("¡∂ªÛ x : " + super.x);
-	}
+		
+               int x = 100;
+               System.out.println("local X : " + x);
+               System.out.println("Ïù∏Ïä§ÌÑ¥Ïä§ x : " + this.x);
+               System.out.println("Ï°∞ÏÉÅ x : " + super.x);
+		
+    }
 
 }
