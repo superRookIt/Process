@@ -5,4 +5,5 @@ public class Mylotto {
 	int same;
 	int rank;
 	int reward;
+	
 }
