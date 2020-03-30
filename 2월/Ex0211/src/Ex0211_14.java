@@ -9,8 +9,10 @@ public class Ex0211_14 {
 
 		int[] c = new int[10];
 		int[] d = { 0, 500, 1000, 3000 };
+		
 		int[] e = new int[10];
 		int[] f = { 0, 10, 100, 1000 };
+		
 		int tmp = 0;
 		int ran = 0;
 		int j = 0;
@@ -40,7 +42,7 @@ public class Ex0211_14 {
 			e[i] = f[j];
 		}
 
-		System.out.print("cÀÇ ·£´ı°ª : ");
+		System.out.print("cì˜ ë°°ì—´ : ");
 		for (int i = 0; i < c.length; i++) {
 			System.out.print(c[i] + " / ");
 
@@ -48,7 +50,7 @@ public class Ex0211_14 {
 
 		System.out.println();
 
-		System.out.print("eÀÇ ·£´ı°ª : ");
+		System.out.print("eì˜ ë°°ì—´ : );
 		for (int i = 0; i < e.length; i++) {
 			System.out.print(e[i] + " / ");
 		}
