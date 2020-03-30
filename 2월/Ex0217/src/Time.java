@@ -6,6 +6,6 @@ public class Time {
 	float second;
 
 	void print() {
-		System.out.println("¾Ë¶÷¼³Á¤ : " + hour + "½Ã " + minute + "ºÐ " + second + "ÃÊ");
+		System.out.println("ì‹œê°„ : " + hour + "ì‹œ " + minute + "ë¶„ " + second + "ì´ˆ ");
 	}
 }
