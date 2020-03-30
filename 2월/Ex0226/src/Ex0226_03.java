@@ -1,10 +1,10 @@
-package com.javalec.ex;//[ÆĞÅ°Áö]
+package com.javalec.ex;//[íŒ¨í‚¤ì§€]
 
-import java.util.*; //¡Ú  *ÇÏ¸é utilÀÇ ÆĞÅ°Áö(Æú´õ)¸¦ ¸ğµÎ ´Ù »ç¿ë
+import java.util.*; //â˜…  *í•˜ë©´ utilì˜ íŒ¨í‚¤ì§€(í´ë”)ë¥¼ ëª¨ë‘ ë‹¤ ì‚¬ìš©
 //import java.util.Scanner; 
 //import java.util.Date;
 
-import java.lang.*; //¡Ú  *ÇÏ¸é langÀÇ ÆĞÅ°Áö¸¦ ¸ğµÎ ´Ù »ç¿ë 
+import java.lang.*; //â˜…  *í•˜ë©´ langì˜ íŒ¨í‚¤ì§€ë¥¼ ëª¨ë‘ ë‹¤ ì‚¬ìš© 
 import java.text.SimpleDateFormat;
 
 public class Ex0226_03 {
