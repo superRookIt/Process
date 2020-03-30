@@ -20,7 +20,7 @@ class People {
 		if (obj != null && obj instanceof People) {
 			People p = (People) obj;
 			return stu_number == p.stu_number;
-			// p1.equals(p2)ÀÇ °æ¿ì p1ÀÇ stu_number == p2<p>.stu_number;
+			 // p1.equals(p2)ì˜ ê²½ìš° p1ì˜ stu_number == p2<p>.stu_number;
 		}
 
 		return false;
