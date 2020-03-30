@@ -10,8 +10,8 @@ public class Ex0227_01 {
 		// Time t2=new Time();
 		// t2=t;
 		
-		s1.setName("È«±æµ¿");
-		s2.setName("ÀÌ¼ø½Å");
+		 s1.setName("í™ê¸¸ë™");
+                 s2.setName("ì´ìˆœì‹ "); 
 		
 		System.out.println(s1);
 		System.out.println(s2);
