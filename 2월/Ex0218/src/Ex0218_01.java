@@ -12,7 +12,6 @@ public class Ex0218_01 {
 		System.out.println(t1.minute);
 		System.out.println(t1.getHour()); //★★★
 		
-
 //		Time t1 = new Time();
 //              10:10:10
 	
