@@ -2,7 +2,7 @@ public class Ex0220_05 {
 
 	public static void main(String[] args) {
 
-		int[] d = new int[2]; //¹è¿­µµ °´Ã¼ ¡Ú
+		int[] d = new int[2]; //ë°°ì—´ë„ ê°ì²´ â˜…
 
 		d[0] = 10;
 		d[1] = 100;
