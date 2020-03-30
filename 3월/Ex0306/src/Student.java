@@ -16,7 +16,7 @@ public class Student {
 	}
 
 	public String toString() {
-		return "ÇĞ¹ø : " + hak + " , ÀÌ¸§ : " + name + " , ÇÕ°è " + total;
+		return "í•™ë²ˆ : " + hak + " , ì´ë¦„ : " + name + " , í•©ê³„ " + total;
 	}
 
 }
