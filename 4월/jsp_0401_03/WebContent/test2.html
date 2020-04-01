@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<!-- name 필수! -->
+
+
+
+	<form action="form_ok2.jsp" name="form" method="post">
+		<label for="name">이름</label>
+		<input type="text" name="name" id="name" size="10"><br>
+		<label for="id">아이디</label>
+		<input type="text" name="id" id="id" size="10"><br>
+		<label for="pw">패스워드</label>
+		<input type="text" name="pw" id="pw" size="10"><br>
+		
+		
+		
+		<p>취미</p>
+		<input type="checkbox" name="hobby" id="hobby1" value="cook">
+		<label for="hobby1">요리</label>
+			<input type="checkbox" name="hobby" id="hobby2" value="read">
+		<label for="hobby2">독서</label>
+			<input type="checkbox" name="hobby" id="hobby3" value="run">
+		<label for="hobby3">조깅</label>
+			<input type="checkbox" name="hobby" id="hobby4" value="swim">
+		<label for="hobby4">수영</label><br>
+		
+		
+		
+		<p>전공과목 선택</p>
+		<input type="radio" name="major" id="major1" value="kor"><label>국문학과</label>
+		<input type="radio" name="major" id="major2" value="eng"><label>영문학과</label>
+		<input type="radio" name="major" id="major3" value="math"><label>수학과</label>
+		<input type="radio" name="major" id="major4" value="design"><label>디자인과</label>
+		
+		
+		<p>주소</p>
+		
+		<select name="address">
+
+		<option value="seoul">서울</option>
+		<option value="gyeonggi">경기</option>
+		<option value="busan">부산</option>
+		<option value="incheon">인천</option>
+		
+		</select><br>
+		
+		
+		<input type="submit" value="전송">	
+		<input type="reset" value="취소">	
+
+
+	</form>
+
+</body>
+</html>
