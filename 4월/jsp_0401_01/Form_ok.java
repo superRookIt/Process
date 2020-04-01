@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+
 @WebServlet("/F_ok") // 단축키 [맵핑]
+
 
 public class Form_ok extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -17,6 +19,7 @@ public class Form_ok extends HttpServlet {
 		// 생성자
 	}
 
+	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// method="get" doGet실행, 주소로 바로 접근해도 실행 [void 메소드]
@@ -24,6 +27,7 @@ public class Form_ok extends HttpServlet {
 		actionDo(request,response);
 	}
 
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		// method="post" doPost실행, [void 메소드]
@@ -31,6 +35,7 @@ public class Form_ok extends HttpServlet {
 		actionDo(request,response);
 	}
 
+	
 	protected void actionDo(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
