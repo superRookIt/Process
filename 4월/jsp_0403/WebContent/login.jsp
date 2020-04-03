@@ -15,7 +15,9 @@
 		
 	String id = request.getParameter("id");
 	String pw = request.getParameter("pw");
-	String name = URLEncoder.encode(request.getParameter("name"),"utf-8"); /* ★★★ */
+	
+	String name = URLEncoder.encode(request.getParameter("name"),"utf-8"); 
+	/* ★ 한글은 깨져서 나오므로 이렇게 인코딩을 해줘야 함 ★ */
 	
 	
 	if (id.equals("admin") && pw.equals("777")) {
