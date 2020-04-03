@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>계산범위</h1>
+
+	<form action="ex0403_05.jsp" name="form" method="get">
+
+		<label> 시작값 </label><input type="text" name="start"><br>
+		<label> 종료값 </label><input type="text" name="end">
+		<input type="button" onclick="check()" value="계산">
+
+	</form>
+
+
+	<script type="text/javascript">
+	
+		function check() {
+			
+			/* value의 string이 int로 바뀜 */
+			/* 문자를 숫자로 변경 */
+			var start1 = parseInt(form.start.value);
+			var end1 = parseInt(form.end.value);
+			
+			if(form.start.value==""){
+				alert('데이터를 입력해주세요')
+				form.start.focus();
+				return false;
+			}
+
+			if (end1 <= start1) {
+				alert('시작의 값이 끝의 값보다 크거나 같을 수 없습니다');
+				form.start.value="";
+				form.start.focus();
+				return false;
+			}else 
+				return form.submit();
+			
+		}
+		
+	</script>
+
+
+
+</body>
+</html>

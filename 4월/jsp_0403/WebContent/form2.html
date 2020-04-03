@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>학생성적입력</h1>
+
+	<form action="ex0403_06.jsp" name="form" method="get">
+
+		<label> 학번 </label><input type="text" name="hak"><br>
+		<label> 이름 </label><input type="text" name="name"><br>
+		<label> 국어 </label><input type="text" name="kor"><br>
+		<label> 영어</label><input type="text" name="eng"><br>
+		<label> 수학 </label><input type="text" name="math"><br>
+		<input type="button" onclick="check()" value="저장">
+		
+	</form>
+
+	<script type="text/javascript">
+	
+		
+		function check() {
+
+			if (form.hak.value == "") {
+				alert('학번을 입력해주세요');
+				form.hak.focus();
+				return false;
+			}
+
+			if (form.name.value == "") {
+				alert('이름을 입력해주세요');
+				form.name.focus();
+				return false;
+			}
+
+			if (form.kor.value == "") {
+				alert('국어점수를 입력해주세요');
+				form.kor.focus();
+				return false;
+			}
+
+			if (form.eng.value == "") {
+				alert('영어점수를 입력해주세요');
+				form.eng.focus();
+				return false;
+			}
+
+			if (form.math.value == "") {
+				alert('수학점수를 입력해주세요');
+				form.math.focus();
+				return false;
+			}
+
+			return form.submit();  /* ★  */
+		}
+		
+	</script>
+
+</body>
+</html>
