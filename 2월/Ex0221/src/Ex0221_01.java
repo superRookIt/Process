@@ -11,7 +11,7 @@ public class Ex0221_01 {
     static Student add(Student s){
        return s
             }
-//
+
 
 	// 이름이 add로 같지만 타입이 다르니까 가능!!
 
@@ -29,7 +29,7 @@ public class Ex0221_01 {
 	static void add(char a) {
 	}
 
-//
+
 
 	int a = 0;
 	char b = 'a';
