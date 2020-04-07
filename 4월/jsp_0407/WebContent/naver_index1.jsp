@@ -1,0 +1,131 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/naver2.css">
+</head>
+<body>
+
+	<div id="wrap">
+
+		<!-- header -->
+		<div id="header">
+			<h1>
+				<a href="http://www.naver.com" class="sp h_logo" id="log.naver"><span
+					class="blind">NAVER</span></a>
+			</h1>
+			<div class="lang">
+				<select id="locale_switch" name="locale_switch" title="언어선택"
+					class="sel">
+					<option value="ko_KR">한국어</option>
+					<option value="en_US">English</option>
+					<option value="zh-Hans_CN">中文(简体)</option>
+					<option value="zh-Hant_TW">中文(台灣)</option>
+				</select>
+			</div>
+		</div>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+			<!-- content -->
+			<div id="content">
+				<div class="title">
+					<p></p>
+				</div>
+				<form id="frmNIDLogin" name="frmNIDLogin" target="_top"
+					action="login_ok.jsp" method="POST">
+
+					<fieldset class="login_form">
+						<div class="id_area">
+							<div class="input_row" id="id_area">
+								<span class="input_box"> <label for="id"
+									id="label_id_area" class="lbl" style="display: block;">아이디</label>
+									<input type="text" id="id" name="id" accesskey="L"
+									placeholder="아이디" class="int" maxlength="41" value="">
+								</span>
+							</div>
+
+						</div>
+
+						<div class="pw_area">
+							<div class="input_row" id="pw_area">
+								<span class="input_box"> <label for="pw"
+									id="label_pw_area" class="lbl">비밀번호</label> <input
+									type="password" id="pw" name="pw" placeholder="비밀번호"
+									class="int" maxlength="16">
+								</span>
+
+							</div>
+						</div>
+
+						<input type="submit" title="로그인" alt="로그인" value="로그인"
+							class="btn_global" id="log.login">
+
+						<div class="check_info">
+							<div class="login_check">
+								<span class="login_check_box"> <input type="checkbox"
+									id="login_chk" name="nvlong" class="" value="off"> <label
+									for="login_chk" id="label_login_chk" class="sp ">로그인 상태
+										유지</label>
+								</span>
+
+							</div>
+
+							<div class="pc_check">
+								<span class="ip_check"> <a
+									href="/login/ext/help_ip3.html" target="_blank" id="ipguide"
+									title="">IP보안</a> <span class="ip_ch"> <input
+										type="checkbox" id="ip_on" value="off" class=""> <label
+										for="ip_on" id="label_ip_on" class="sp on"><span
+											class="blind">on</span></label>
+								</span>
+								</span> <span class="bar">|</span>
+								<div class="dis_di">
+									<a href="#" id="log.otn" title="일회용 로그인">일회용 로그인</a><a href="#"
+										id="log.otnhelp" title="도움말" class="btn_help_cover"><span
+										class="sp btn_help"></span><span class="blind">도움말</span></a>
+								</div>
+							</div>
+
+
+							<div id="nudge_tooltip">
+								<a href="#" class="diaper_banner"> <span class="nudge"><img
+										src="https://ssl.pstatic.net/static/nid/login/nudge_bar.png"
+										width="255" height="30" alt="PC방처럼 여러 사람이 쓰는 PC라면?"></span>
+									<button type="button" aria-label="닫기" class="nudge_close"
+										id="nudge_close" style="width: 10px; height: 10px;"></button>
+								</a>
+							</div>
+
+						</div>
+					</fieldset>
+
+
+				</form>
+
+				<div class="position_a">
+					<div class="find_info">
+						<a target="_blank" id="idinquiry"
+							href="https://nid.naver.com/user2/api/route.nhn?m=routeIdInquiry&amp;lang=ko_KR">아이디
+							찾기</a> <span class="bar" aria-hidden="true">|</span> <a
+							target="_blank" id="pwinquiry"
+							href="https://nid.naver.com/user2/api/route.nhn?m=routePwInquiry&amp;lang=ko_KR">비밀번호
+							찾기</a> <span class="bar" aria-hidden="true">|</span> <a
+							target="_blank" id="join"
+							href="https://nid.naver.com/user2/V2Join.nhn?m=agree&amp;lang=ko_KR">회원가입</a>
+					</div>
+				</div>
+
+			</div>
+			<!-- //content -->
+		</div>
+		<!-- //container -->
+
+	</div>
+
+
+</body>
+</html>
