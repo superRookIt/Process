@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+
+
+	function check() {
+
+		var name_check = /^[가-힣]*$/;
+
+		var id_check = /(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).*$/;
+		
+		var pw_check = /(?=.*[~!@#$%^&*()_+|<>?])(?=.[1-9]).*$/;
+		
+		if(join.name.value==""){
+			alert('이름을 입력해주세요')
+			join.name.focus();
+			return false;
+		}
+		
+		if (!(name_check.test(join.name.value))) {
+			alert('한글만 입력 가능합니다')
+			join.name.focus();
+			return false;
+		}
+
+		if(join.id.value==""){
+			alert('아이디를 입력해주세요')
+			join.id.focus();
+			return false;
+		}
+		
+		
+		if (!(id_check.test(join.id.value))) {
+			alert("아이디는 대소문자, 숫자 1개 이상씩 입력해주세요")
+			join.id.focus();
+			return false;
+		}
+		
+		if(join.pw.value==""){
+			alert('비밀번호를 입력해주세요')
+			join.pw.focus();
+			return false;
+		}
+		
+		if(!(pw_check.test(join.pw.value))){
+			alert('비밀번호는 특수문자와 숫자를 1개 이상 입력해야 합니다')
+			join.pw.focus();
+			return false;
+		}
+
+		if (!(join.pw.value == join.pw2.value)) {
+			alert('패스워드가 일치하지 않습니다. 다시 입력해주세요');
+			join.pw.focus();
+			return false;
+		}
+		
+		
+		if(join.gender.value==""){
+			alert('성별을 선택해주세요')
+			join.gender.focus();
+			return false;
+		}
+		
+		return join.submit();
+
+	}
+</script>
+</head>
+<body>
+
+<h2>회원가입</h2>
+
+<form action="ex0408_03.jsp" name="join" method="post">
+
+이름 : <input type="text" name="name"><br>
+아이디 : <input type="text" name="id"><br>
+패스워드 : <input type="text" name="pw"><br>
+패스워드 확인: <input type="text" name="pw2"><br>
+
+
+<p>성별</p> 
+<input type="radio" name="gender" value="남자">남자<br>
+<input type="radio" name="gender" value="여자">여자<br>
+
+
+<p>주소</p>
+		<select name="address">
+			<option value="서울">서울</option>
+			<option value="인천">인천</option>
+			<option value="부산">부산</option>
+			<option value="경기">경기</option>
+		</select> 
+		<input type="button" onclick="check()" value="저장"> 
+		<input type="reset" value="취소">
+
+	</form>
+
+</body>
+</html>
