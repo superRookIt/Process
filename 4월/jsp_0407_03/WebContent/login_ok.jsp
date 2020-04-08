@@ -10,7 +10,7 @@
 <body>
 
 	<%
-		//id,pw를 비교해서 쿠키에 저장
+	
 	String id = request.getParameter("id");
 	String pw = request.getParameter("pw");
 
