@@ -9,7 +9,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-<%!Connection conn; /* 연결 */
+        <%!
+	
+        Connection conn; /* 연결 */
 	Statement stmt; /* 실행,상태 */
 	ResultSet rs; /* 결과값 받음 */
 
