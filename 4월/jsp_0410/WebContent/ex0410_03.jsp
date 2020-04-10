@@ -8,7 +8,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 
-        <%!Connection c;
+
+
+<%!Connection c;
 	Statement s;
 	ResultSet rs;
 
@@ -59,14 +61,18 @@ tr, td, th {
 		<%
 			try {
 
+			//tomcat과 jdbc 연결하는 부분
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 
+			//connection은 jdbc와 db(oracle) 연결
 			c = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcle", "ora_user", "1234");
 
+			//sql구문 실행시키는 객체 생성
 			s = c.createStatement();
 
 			String sql = "select * from member3";
 
+			//sql 실행 후 rs 객체 받음
 			rs = s.executeQuery(sql);
 
 			/* try문 안이라서 지역변수라서 try문 벗어나면 사라짐!
