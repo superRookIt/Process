@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+
+	function check(){
+		
+		if(form.search.value == "n_search"){
+			
+			var name_ch=/^[a-zA-Z가-힣]*$/;
+			
+			if(form.name.value==""){
+				alert('이름 데이터가 없습니다');
+				form.name.focus();
+				return false;
+			}
+			
+			if(!(name_ch.test(form.name.value))){
+				alert('이름은 영어/국문만 입력가능합니다');
+				form.name.focus();
+				return false;
+			}
+			
+		}
+		else{
+			
+			var num_ch=/^[0-9]*$/;
+			
+			if(form.start.value==""){
+				alert('시작값 데이터가 없습니다');
+				form.start.focus();
+				return false;
+			}
+			
+			
+			if(!(num_ch.test(form.start.value))){
+				alert('월급은 숫자만 입력가능합니다');
+				form.start.focus();
+				return false;
+			}
+			
+			if(form.end.value==""){
+				alert('끝값 데이터가 없습니다');
+				form.end.focus();
+				return false;
+			}
+			
+			if(!(num_ch.test(form.end.value))){
+				alert('월급은 숫자만 입력가능합니다');
+				form.end.focus();
+				return false;
+			}
+
+			/* parseInt */
+			if (parseInt(form.start.value) > parseInt(form.end.value)) {
+				alert('시작값이 끝 값보다 클 수 없습니다')
+				form.start.focus();
+				return false;
+			}
+			
+		}
+ 
+		return form.submit();
+	}
+	
+</script>
+
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form action="ex0413_03.jsp" name="form" method="post">
+
+        <select name="search">
+        <option value="n_search">이름검색 
+        <option value="s_search">월급검색
+        </select>
+        
+        사원번호 낮은 기준<input type="radio" name="array" value="lowid">
+        사원번호 높은 기준<input type="radio" name="array" value="highid">
+        월급 낮은 기준<input type="radio" name="array" value="lows">
+        월급 높은 기준<input type="radio" name="array" value="highs">
+                  
+             <input type="text" name="name"><br>
+             
+             <input type="text" name="start">~ 
+             <input type="text" name="end"> 
+             <input type="button" onclick="check()" value="검색">
+             
+             
+        
+	</form>
+
+</body>
+</html>
