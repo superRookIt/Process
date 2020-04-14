@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+
+form{width: 1000px; margin:10px auto;}
+input{margin:15px auto;}
+
+</style>
+<script>
+
+function check(){
+	
+	var id_check=/^[a-zA-Z0-9]*$/;
+	var name_check=/^[가-힣]*$/;
+	var phone_check=/^[0-9]*$/;
+	
+	if(join.id.value==""){
+		alert('아이디를 입력해주세요')
+		join.id.focus();
+		return false;
+	}
+	
+	
+	if(!(id_check.test(join.id.value))){
+		alert('아이디는 영어, 숫자만 가능합니다');
+		join.id.focus();
+		return false;
+		
+	}
+	
+	if(join.pw.value==""){
+		alert('비밀번호를 입력해주세요')
+		join.pw.focus();
+		return false;
+	}
+	
+	if(join.pw2.value==""){
+		alert('비밀번호를 한번 더 입력해주세요')
+		join.pw2.focus();
+		return false;
+	}
+	
+	
+	if(!(join.pw.value==join.pw2.value)){
+		alert('패스워드가 일치하지 않습니다');
+		join.pw.focus();
+		return false;
+	}
+	
+	
+	if(join.name.value==""){
+		alert('이름을 입력해주세요')
+		join.name.focus();
+		return false;
+	}
+	
+	if(!(name_check.test(join.name.value))){
+		alert('이름은 한글만 가능합니다');
+		join.name.focus();
+		return false;
+	}
+	
+	
+	
+	
+	if(join.phone2.value==""){
+		alert('핸드폰 가운데 4자리를 입력해주세요')
+		join.phone2.focus();
+		return false;
+	}
+	
+	if(!(phone_check.test(join.phone2.value))){
+		alert('숫자만 입력 가능합니다');
+		join.phone2.focus();
+		return false;
+	}
+	
+	if(join.phone3.value==""){
+		alert('핸드폰 끝번호 4자리를 입력해주세요')
+		join.phone3.focus();
+		return false;
+	}
+	
+	if(!(phone_check.test(join.phone3.value))){
+		alert('숫자만 입력 가능합니다');
+		join.phone3.focus();
+		return false;
+	}
+	
+	if(join.gender.value==""){
+		alert('성별을 체크해 주세요')
+		join.gender.focus();
+		return false;
+	}
+	
+	
+	return join.submit();
+	
+}
+
+</script>
+<title>회원가입</title>
+</head>
+<body>
+
+<form action="JoinOk" name="join" method="post">
+<h2>회원가입</h2>
+아이디 : <input type="text" name="id" autofocus="autofocus" placeholder="아이디는 영문 숫자만 가능"><br>
+비밀번호 : <input type="password" name="pw"><br>
+비밀번호 확인 : <input type="password" name="pw2"><br>
+이름 : <input type="text" name="name" placeholder="한글만 가능"><br>
+전화번호 : <select name="phone1">
+<option value="010">010</option>
+<option value="011">011</option>
+<option value="016">016</option>
+<option value="017">017</option>
+<option value="018">018</option>
+<option value="019">019</option>
+</select>
+<input type="text" name="phone2">
+<input type="text" name="phone3"><br>
+
+성별 : <input type="radio" name="gender" value="남자" id="man"><label for="man">남자</label>
+<input type="radio" name="gender" value="여자" id="woman"><label for="woman">여자</label><br>
+<input type="button" onclick="check()" value="회원가입">
+<input type="reset" value="취소">
+
+</form>
+
+</body>
+</html>
