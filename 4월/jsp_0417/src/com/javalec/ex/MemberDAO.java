@@ -52,7 +52,7 @@ public class MemberDAO {
 
 			sql = "select * from member3";
 			//c = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcle","ora_user", "1234");
-            c = datasource.getConnection();
+                        c = datasource.getConnection();
 			ps = c.prepareStatement(sql);
 			rs = ps.executeQuery();
 
