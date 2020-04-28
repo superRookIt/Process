@@ -104,7 +104,7 @@
 
 
 
-		<div class="write"><a href="write_view.jsp">쓰기</a></div>
+		<div class="write"><a href="write_view.do">쓰기</a></div>
 
 
 
