@@ -44,11 +44,7 @@
 
 			<tr>
 				<td colspan="3" class="article">${content_view.bContent}</td>
-				<!-- 이미지 넣을때 ${content_view.img}  
-			    img src="img/a1.jpg"일때
-			    img src="img/${content_view.img}"일때
-			    
-			    -->
+			 
 			</tr>
 
 			<tr>
